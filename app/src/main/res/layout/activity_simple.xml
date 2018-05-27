@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Simple">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="top|bottom|left|right"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:autoSizeMinTextSize="14dp"
+            android:gravity="bottom|right"
+            android:minHeight="97dp"
+            android:scrollbars="vertical"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/znakButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/BkspButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/plusButton"
+                android:layout_below="@+id/textView"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="BKSP"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/sinButton"
+                app:layout_constraintEnd_toStartOf="@+id/CButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/CButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/dziewiecButton"
+                android:layout_below="@+id/textView"
+                android:layout_weight="1"
+                android:text="C"
+                android:onClick="click"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/dziewiecButton"
+                app:layout_constraintEnd_toStartOf="@+id/znakButton"
+                app:layout_constraintStart_toEndOf="@+id/BkspButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:text="C" />
+
+            <Button
+                android:id="@+id/znakButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignEnd="@+id/textView"
+                android:layout_below="@+id/textView"
+                android:layout_weight="1"
+                android:text="+/-"
+                android:onClick="click"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/CButton"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="+/-" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/siedemButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/sinButton"
+                android:layout_below="@+id/sinButton"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="7"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/jedenButton"
+                app:layout_constraintEnd_toStartOf="@+id/piecButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sinButton"
+                tools:text="7" />
+
+            <Button
+                android:id="@+id/osiemButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/osiemButton"
+                android:layout_below="@+id/sinButton"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="8"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/dwaButton"
+                app:layout_constraintEnd_toStartOf="@+id/szescButton"
+                app:layout_constraintStart_toEndOf="@+id/czteryButton"
+                app:layout_constraintTop_toBottomOf="@+id/osiemButton"
+                tools:text="8" />
+
+            <Button
+                android:id="@+id/dziewiecButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/dziewiecButton"
+                android:layout_below="@+id/osiemButton"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="9"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/trzyButton"
+                app:layout_constraintEnd_toStartOf="@+id/plusButton"
+                app:layout_constraintStart_toEndOf="@+id/piecButton"
+                app:layout_constraintTop_toBottomOf="@+id/dziewiecButton"
+                tools:text="9" />
+
+            <Button
+                android:id="@+id/dzielenieButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/znakButton"
+                android:layout_below="@+id/znakButton"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="/"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/trzyButton"
+                app:layout_constraintTop_toBottomOf="@+id/razyButton"
+                app:layout_constraintVertical_bias="0.692"
+                tools:text="/" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/czteryButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/sinButton"
+                android:layout_below="@+id/sinButton"
+                android:layout_weight="1"
+                android:text="4"
+                android:onClick="click"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/jedenButton"
+                app:layout_constraintEnd_toStartOf="@+id/piecButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sinButton"
+                tools:text="4" />
+
+            <Button
+                android:id="@+id/piecButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/osiemButton"
+                android:layout_below="@+id/sinButton"
+                android:layout_weight="1"
+                android:text="5"
+                android:onClick="click"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/dwaButton"
+                app:layout_constraintEnd_toStartOf="@+id/szescButton"
+                app:layout_constraintStart_toEndOf="@+id/czteryButton"
+                app:layout_constraintTop_toBottomOf="@+id/osiemButton"
+                tools:text="5" />
+
+            <Button
+                android:id="@+id/szescButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/dziewiecButton"
+                android:layout_below="@+id/osiemButton"
+                android:layout_weight="1"
+                android:text="6"
+                android:textAlignment="center"
+                android:onClick="click"
+                app:layout_constraintBottom_toTopOf="@+id/trzyButton"
+                app:layout_constraintEnd_toStartOf="@+id/plusButton"
+                app:layout_constraintStart_toEndOf="@+id/piecButton"
+                app:layout_constraintTop_toBottomOf="@+id/dziewiecButton"
+                tools:text="6" />
+
+            <Button
+                android:id="@+id/razyButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/dzielenieButton"
+                android:layout_below="@+id/dzielenieButton"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="*"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/dzielenieButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/trzyButton"
+                app:layout_constraintTop_toBottomOf="@+id/plusButton"
+                tools:text="*" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/jedenButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/sinButton"
+                android:layout_below="@+id/sinButton"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="1"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/jedenButton"
+                app:layout_constraintEnd_toStartOf="@+id/piecButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sinButton"
+                tools:text="1" />
+
+            <Button
+                android:id="@+id/dwaButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/osiemButton"
+                android:layout_below="@+id/sinButton"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="2"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/dwaButton"
+                app:layout_constraintEnd_toStartOf="@+id/szescButton"
+                app:layout_constraintStart_toEndOf="@+id/czteryButton"
+                app:layout_constraintTop_toBottomOf="@+id/osiemButton"
+                tools:text="2" />
+
+            <Button
+                android:id="@+id/trzyButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/dziewiecButton"
+                android:layout_below="@+id/osiemButton"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="3"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/trzyButton"
+                app:layout_constraintEnd_toStartOf="@+id/plusButton"
+                app:layout_constraintStart_toEndOf="@+id/piecButton"
+                app:layout_constraintTop_toBottomOf="@+id/dziewiecButton"
+                tools:text="3" />
+
+            <Button
+                android:id="@+id/minusButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/dzielenieButton"
+                android:layout_below="@+id/dzielenieButton"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="-"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/dzielenieButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/trzyButton"
+                app:layout_constraintTop_toBottomOf="@+id/plusButton"
+                tools:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/zeroButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/sinButton"
+                android:onClick="click"
+                android:layout_below="@+id/sinButton"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/jedenButton"
+                app:layout_constraintEnd_toStartOf="@+id/piecButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sinButton"
+                tools:text="0" />
+
+            <Button
+                android:id="@+id/kropkaButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/osiemButton"
+                android:layout_below="@+id/sinButton"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="."
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/dwaButton"
+                app:layout_constraintEnd_toStartOf="@+id/szescButton"
+                app:layout_constraintStart_toEndOf="@+id/czteryButton"
+                app:layout_constraintTop_toBottomOf="@+id/osiemButton"
+                tools:text="." />
+
+            <Button
+                android:id="@+id/rownaButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/dziewiecButton"
+                android:layout_below="@+id/osiemButton"
+                android:layout_weight="1"
+                android:text="="
+                android:onClick="click"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/trzyButton"
+                app:layout_constraintEnd_toStartOf="@+id/plusButton"
+                app:layout_constraintStart_toEndOf="@+id/piecButton"
+                app:layout_constraintTop_toBottomOf="@+id/dziewiecButton"
+                tools:text="=" />
+
+            <Button
+                android:id="@+id/plusButton"
+                style="@android:style/Widget.Material.Light.Button.Toggle"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/dzielenieButton"
+                android:layout_below="@+id/dzielenieButton"
+                android:layout_weight="1"
+                android:onClick="click"
+                android:text="+"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/dzielenieButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/trzyButton"
+                app:layout_constraintTop_toBottomOf="@+id/plusButton"
+                tools:text="+" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
